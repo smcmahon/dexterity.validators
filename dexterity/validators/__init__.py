@@ -17,6 +17,8 @@ EMAIL_RE = u"([0-9a-zA-Z_&.'+-]+!)*[0-9a-zA-Z_&.'+-]+@(([0-9a-zA-Z]([0-9a-zA-Z-]
 # regular expression validator that gets regex, ignore, msgid, errmsg
 # from a class
 def reValidate(value, recls):
+    if not value:
+        return True
     if recls.ignore:
         tvalue = recls.ignore.sub(u'', value)
     else:
