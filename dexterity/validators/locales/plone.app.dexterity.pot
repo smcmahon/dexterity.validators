@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-01-19 14:52+0000\n"
+"POT-Creation-Date: 2015-03-02 14:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,23 +14,31 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.app.dexterity\n"
 
-msgid "regex_invalid"
-msgstr "Invalid: ${value}"
-
+#. Default: "${value} is not a valid email address."
 msgid "email_invalid"
-msgstr "${value} is not a valid email address."
+msgstr ""
 
-msgid "usphone_invalid"
-msgstr "${value} is not a valid phone number with area code."
-
+#. Default: "${value} is not a valid international phone number."
 msgid "intphone_invalid"
-msgstr "${value} is not a valid international phone number."
+msgstr ""
 
+#. Default: "Invalid: ${value}"
+msgid "regex_invalid"
+msgstr ""
+
+#. Default: "${value} is not a valid URL."
+msgid "url_invalid"
+msgstr ""
+
+#. Default: "${value} is not a valid phone number with area code."
+msgid "usphone_invalid"
+msgstr ""
+
+#. Default: "${value} is not a valid web address. Make sure you include http:// or https://"
+msgid "webaddress_invalid"
+msgstr ""
+
+#. Default: "${value} is not a valid zip code."
 msgid "zipcode_invalid"
-msgstr "${value} is not a valid zip code."
+msgstr ""
 
-msgid "url_invalid"
-msgstr "${value} is not a valid URL."
-
-msgid "url_invalid"
-msgstr "${value} is not a valid web address. Make sure you include http(s)://"

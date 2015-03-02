@@ -104,8 +104,8 @@ class IsWebAddress(RegExValidator):
 
     regex = re.compile(r'https?://[^\s\r\n]+')
     ignore = ''
-    msgid = u"url_invalid"
-    errmsg = u"${value} is not a valid web address. Make sure you include http(s)://"
+    msgid = u"webaddress_invalid"
+    errmsg = u"${value} is not a valid web address. Make sure you include http:// or https://"
 
 
 def isWebAddress(value):
