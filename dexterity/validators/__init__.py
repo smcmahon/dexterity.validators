@@ -3,7 +3,7 @@ import re
 import z3c.form.validator
 import zope.interface
 
-from plone.app.dexterity import MessageFactory as _
+from plone.app.dexterity import _
 
 # protocols for isURL validator, the secure (*s) variants are automagically
 # added
