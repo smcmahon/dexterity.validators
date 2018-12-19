@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="dexterity.validators">
+
+    <!-- Include configuration for dependencies listed in setup.py -->
+    <includeDependencies package="." />
+    <!-- locales folder -->
+    <i18n:registerTranslations directory="locales" />
+
+</configure>

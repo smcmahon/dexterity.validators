@@ -3,7 +3,7 @@ import re
 import z3c.form.validator
 import zope.interface
 
-from plone.app.dexterity import MessageFactory as _
+from plone.app.dexterity import _
 
 # protocols for isURL validator, the secure (*s) variants are automagically
 # added
@@ -17,6 +17,8 @@ EMAIL_RE = u"([0-9a-zA-Z_&.'+-]+!)*[0-9a-zA-Z_&.'+-]+@(([0-9a-zA-Z]([0-9a-zA-Z-]
 # regular expression validator that gets regex, ignore, msgid, errmsg
 # from a class
 def reValidate(value, recls):
+    if not value:
+        return True
     if recls.ignore:
         tvalue = recls.ignore.sub(u'', value)
     else:
@@ -102,8 +104,8 @@ class IsWebAddress(RegExValidator):
 
     regex = re.compile(r'https?://[^\s\r\n]+')
     ignore = ''
-    msgid = u"url_invalid"
-    errmsg = u"${value} is not a valid web address. Make sure you include http(s)://"
+    msgid = u"webaddress_invalid"
+    errmsg = u"${value} is not a valid web address. Make sure you include http:// or https://"
 
 
 def isWebAddress(value):
